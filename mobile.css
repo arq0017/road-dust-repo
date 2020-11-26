@@ -1,0 +1,322 @@
+				/*Hover button mobile version*/
+
+
+
+
+.hamburger-menu{
+	display: block ;
+	cursor: pointer ;
+	color : black ; 
+}
+.bar1 ,.bar2 ,.bar3 {
+	width :  35px;
+	height : 2px;
+	background-color: aliceblue ;
+	margin : 8px 0 0 0 ;
+	transition : .4s linear ;
+}
+.bar1{
+	margin : 0 ;
+}
+.change .bar1{
+	transform : rotate(45deg) translate(8px , 6px) ;
+}
+.change .bar2{
+	opacity: 0 ;
+}
+.change .bar3{
+	transform : rotate(-45deg) translate(8px , -6px) ;
+}
+
+
+
+/*############### TABLET RESPONSIVE #######################*/
+
+
+@media screen and (max-width:950px)
+{
+	.m13 {
+		font-size:4.7em;
+	}
+	.mainText h4{
+		font-size : 20px;
+		}
+	.left-col h2 {
+		left : -5% ;
+		transform : rotate(-90deg);
+	}
+}
+
+
+/*############### MOBILE RESPONSIVE #######################*/
+
+
+
+@media screen and (max-width:750px){
+
+	/* navbar */
+
+	@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+	ul.topnav li:not(:nth-child(7)) {
+		display : none ;
+	}
+	ul.topnav.responsive {
+		position: relative ;
+		display:block ;
+		height: 100vh ;
+	    top : 0;
+	}
+
+	ul.topnav li.dropdownIcon{
+		display : block ;
+		cursor: pointer ;
+		top : 20px ;
+		left : 15px;
+		position: fixed;
+	}
+	ul.topnav.responsive li.list{
+		display: inline;
+		float : none ;
+		left :45px;
+		transform: translateX(100%);
+	}
+
+	ul.topnav.responsive li.dropdownIcon a{
+	 display: block ;
+	}
+	ul.topnav.responsive li a {
+	display:block;
+	font: 900 2rem 'Montserrat', sans-serif ;
+	padding-right: 80px;
+	overflow:hidden ;
+	}
+		ul.topnav.responsive li.topnav-left{
+		float :none;
+	}
+	ul.topnav.responsive li.topnav-left a {
+		border :none ;
+		border-radius: 0px;
+		padding-right: 80px;
+	}
+
+
+	/* image */
+
+
+	.bgImg img {
+		background-color: black  ;
+		position: relative ;
+	}
+	.mainText{
+		top : 60px ;
+		left : 0 ;
+		text-align : center ;
+	}
+	.m13{
+	     font-size:2.5em;
+		font-weight:700 ;
+	}
+	.mainText h4{
+		padding-bottom: 10px;
+	}
+
+
+	/* about section */
+	.container{
+		padding : 0 ;
+		margin: 0 ;
+	}
+	.col-3 ,.col-4 ,.col-9 {
+		width : 100% ;
+	}
+.left-col h2 {
+	top : 10px ;
+	transform: rotate(0deg);
+	font-size:3em ;
+	font-weight: bolder ;
+	letter-spacing: 7px;
+	left :50% ;
+	transform: translate(-50% ,-20%);
+	text-align: center ;
+	position: relative;
+}
+	.left-col{
+		position: relative ;
+
+	}
+.right-col hr{
+	display: none ;
+	position: relative ;
+	}
+.right-col p{
+	background-color:gainsboro;
+	width :100% ;
+	font-size: 1.3em ;
+	font-weight:100 ;
+	position: relative;
+	}
+	/* Gallery*/
+
+	.galleryHeading h2{
+		font-size: 50px;
+	}
+	.gallery{
+	display : grid ;
+	grid-template-columns: repeat(8 , 1fr) ;
+	  grid-template-rows: repeat(36	, 5vw);
+	grid-gap :2vmin ;
+}
+.Image1 {
+	grid-column: 1/9 ;
+	grid-row : 29/37	;
+}
+	.Image2{
+	grid-column:6/9;
+	grid-row :22/25;
+	}
+	.Image3{
+	grid-column: 6/9 ;
+	grid-row :11/22;
+	}
+.Image4{
+grid-column: 1/6;
+grid-row : 1/8;
+}
+.Image5 {
+	grid-column: 1/6 ;
+	grid-row: 16/22 ;
+
+}
+.Image6 {
+	grid-column: 6/9 ;
+	grid-row : 1/11 ;
+}
+	.Image7{
+
+	grid-column: 6/9 ;
+	grid-row : 25/29 ;
+	}
+.Image8 {
+	grid-column: 1/6 ;
+	grid-row: 22/29 ;
+
+}
+.Image9{
+		grid-column: 1/6;
+	grid-row :8/16;
+}
+
+
+
+	/************************TRIGGER ANIMATION *******************************************/
+	#triggerAnimation .col-3{ width:33% ; }
+
+	.counter-section{
+	margin: 0px ;
+	color:currentColor;
+}
+
+.icon-box .fa {
+	font-size: 40px;
+	margin : 40px 0 40px 0 ;
+	color:#5d5e60;
+}
+.counter-box p{
+	font-size : 13px ;
+}
+p.counter {
+	color : whitesmoke ; 
+	font-size : 40px;
+}
+	p.written{
+		color : whitesmoke ; 
+		display: none  ; 
+	}
+.icon-box{
+	text-align: center ;
+}
+	.success-text{
+		font-size: 100px ; 
+	}
+/* ###################### CONTACT ##################################*/
+.container-box{
+		padding: 0 ;
+}
+.contact-box{
+		grid-template-columns: 1fr ; 
+	}
+	.right-bar , .left-bar {
+		display: block ; 
+		width: 100% ; 
+	}
+	.right-bar input{
+		margin-bottom: 10px ; 
+	}
+	.left{
+		height: 200px;
+	}
+}
+
+/* ###################### FOOTER ##################################*/
+.footerContainer .row {
+	padding : 0 ; 
+	grid-template-columns: 1fr ; 
+}
+/* ###################### SCROLL BAR ##################################*/
+
+
+
+::-webkit-scrollbar {
+	width : 0 ;
+}
+.hide-scrollbar
+{
+    overflow: auto;
+    -ms-overflow-style: none; /* IE 11 */
+    scrollbar-width: none; /* Firefox 64 */
+}
+#scrollPath{
+	position : fixed ;
+	top : 0 ;
+	right : 0 ;
+	width : 10px ;
+	height : 100% ;
+	background : linear-gradient(rgba(255,255,255,.05));
+}
+#progressBar {
+	position : fixed ;
+	top : 0 ;
+	right : 0 ;
+	width : 10px ;
+background:linear-gradient(to top,#af65bf,#85a1c9);
+	animation : animate 5s linear infinite  ;
+}
+@keyframes animate {
+	0% , 100% {
+		filter : hue-rotate(0deg);
+	}
+	50% {
+		filter : hue-rotate(360deg)
+	}
+}
+#progressBar:before{
+	content : " ";
+	position : absolute ;
+	top : 0 ;
+	left : 0 ;
+	width : 100% ;
+	height : 100% ;
+background:linear-gradient(to top,#af65bf,#85a1c9);
+	filter : blur(50px);
+}
+#progressBar:after
+{
+	content : " ";
+	position : absolute ;
+	top : 0 ;
+	left : 0 ;
+	width : 100% ;
+	height : 100% ;
+background:linear-gradient(to top,#af65bf,#85a1c9);
+	filter : blur(40px);
+}

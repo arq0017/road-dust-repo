@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* ####################### defaults ######################## */
+html {
+	scroll-behavior: smooth ;
+}
+*{
+	margin: 0 ;
+	padding : 0 ;
+	list-style: none ;
+	box-sizing: border-box ;
+}
+.container{
+	width : 100% ;
+	margin : auto ;
+	padding-bottom : 4% ;
+	 padding-top : 4% ;
+}
+.row {
+	width : 100% ;
+	display : flex ;
+	flex-wrap : wrap ;
+}
+.row::after {
+	display : table ;
+	clear : both ;
+	content : "";
+}
+.col-1{ width:8.33% ; }
+.col-2{ width:16.66% ; }
+.col-3{ width:25% ; }
+.col-4{ width:33% ; }
+.col-5{ width:41% ; }
+.col-6{ width:50% ; }
+.col-7{ width:58.33% ; }
+.col-8{ width:67% ; }
+.col-9{ width:75% ; }
+.col-10{ width:83.33% ; }
+.col-11{ width:91.66% ; }
+.col-12{ width:100% ; }
+						/*  BACKGROUND IMAGE */
+
+.bgImg img{
+	width: 100% ;
+	height : 100% ;
+	background-size: contain;
+}
+.bgImg{ position : relative ; }
+                                   /* NAV BAR */
+
+nav {
+	background : black ;
+	width: 100% ;
+	margin : 0 ;
+	position : relative 	;
+}
+nav ul {
+	overflow  : hidden ;
+	margin : 0 ;
+	padding : 0 ;
+	top : -300px;
+	transition : top .5s ;
+}
+nav ul.topnav li{
+	position : relative ;
+	float: left ;
+
+}
+nav ul.topnav li.topnav-left{
+	float : right ;
+	padding: 16px;
+
+}
+nav ul.topnav li.topnav-left a {
+	border :3px solid orange ;
+	border-radius: 30px ;
+	padding : 4px ;
+	animation-name:glow;
+	animation-duration: 2s ;
+	animation-direction: alternate ;
+	animation-iteration-count: infinite ;
+}
+
+@keyframes glow {
+	0% {border-color: #F72585;	}
+	20% {border-color: #7209B7;}
+	40% {border-color: #3A0CA3;	}
+	50% {border-color: #4361EE;}
+	60% {border-color: #4CC9F0;	}
+}
+nav ul.topnav li a {
+	display: block ;
+	text-decoration : none ;
+	text-align : center ;
+    min-height: 15px;
+	padding:20px;
+	font-weight: 600;
+	letter-spacing: 1.2px;
+	text-transform:uppercase ;
+	color : azure ;
+	font-family: 'Roboto', sans-serif;
+}
+
+nav ul.topnav li a:hover{
+			color: burlywood
+}
+
+ul.topnav li.dropdownIcon {
+	font-size:25px ;
+	display: none ;
+	padding : 0px ;
+}
+ul.topnav li.dropdownIcon a {
+	display: block ;
+	display: inline-block ;
+	padding : 0px ;
+}
+
+
+
+							/* MAIN PAGE TEXT */
+
+
+
+.mainText{
+
+	position: absolute;
+	font-family: 'Ubuntu', sans-serif;
+	color : gray;
+	top : 35% ;
+	left:5%;
+}
+.m13{
+	color: #612e04 ;
+	font-size:9em;
+	font-weight: 900 ;
+}
+.mainText h4{
+	color:black ;
+	font-size: 25px;
+	padding-left: 10px;
+}
+
+                                  /* ABOUT */
+
+
+.container {
+	position: relative ;
+	background: burlywood ;
+}
+.left-col h2 {
+	left : 0 ;
+	top : 40% ;
+	overflow:  hidden ;
+	position : absolute ;
+	color : black;
+	font-family: 'Roboto', sans-serif;
+	font-size: 7em ;
+	font-weight:bolder ;
+	transform: rotate(-90deg);
+}
+.right-col hr{
+	width : 70% ;
+	margin: auto ;
+	margin-bottom : 30px;
+}
+.right-col p{
+	font-family: 'Montserrat', sans-serif ;
+	font-size: 2em ;
+	font-weight:400 ;
+	text-align: center ;
+	padding : 10%;
+}
+
+
+                                 /* GALLERY */
+
+
+.galleryHeading ,.gallery{
+	display: block ;
+	background: black ;
+	padding: 10px;
+}
+.galleryHeading hr{
+	width : 95% ;
+	margin: auto ;
+}
+.galleryHeading h2{
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 100px;
+	font-weight:bolder ;
+		color: burlywood ;
+}
+.gallery{
+	display : grid ;
+	grid-template-columns: repeat(8 , 1fr) ;
+	  grid-template-rows: repeat(8	, 5vw);
+	grid-gap : 2vmin ;
+}
+.gallery-image{
+	width : 100% ;
+	height: 100% ;
+	object-fit: cover ;
+}
+.Image1 {
+	grid-column: 6/9 ;
+	grid-row : 4/9	;
+}
+.Image4{
+grid-column: 1/4;
+grid-row : 1/6;
+}
+.Image5 {
+	grid-column: 6/9;
+	grid-row : 1/4 ;
+}
+.Image6 {
+	grid-column: 4/6 ;
+	grid-row : 1/6 ;
+}
+.Image8 {
+
+	grid-column: 1/3 ;
+	grid-row: 6/9 ;
+}
+.Image9{
+	grid-column: 3/5 ;
+	grid-row : 6/9 ;
+}
+
+
+						/* COUNTER NUMBER */
+
+.counter-box {
+	padding :10px ; 
+	margin: auto ; 
+	text-align: center ; 
+box-shadow: 10px 10px 19px 0px rgba(0,0,0,0.75);
+	background-color:#1c1b1b; 
+	font-family: 'Poppins' , sans-serif ; 
+}
+.counter-section{
+background: burlywood ; 
+color : antiquewhite ; 
+padding-bottom: 50px ;
+}
+
+.icon-box .fa {
+	font-size: 80px;
+	margin : 25px auto ;
+	color : #804520;
+}
+.counter-box p{
+	font-size : 20px ;
+}
+p.counter {
+	font-size : 80px;
+	
+}
+.icon-box{
+	text-align: center ;
+}
+.success-text{
+	text-align: center ; 
+	background:url("images/dust.jpg") no-repeat;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	padding : 10px ; 
+	font-size : 170px; 	
+	font-family: 'Ubuntu', sans-serif;
+	animation : filling 4s ease forwards infinite alternate ; 
+	}
+@keyframes filling {
+	from{
+		background-position: center 0% ;
+	}
+	to
+	{
+		background-position : center 100% ; 
+	}
+}
+								/* CONTACT */
+
+
+								   .container-box{
+									font-family: 'Ubuntu', sans-serif;
+									position: relative;
+									width: 100%;
+									height: 100%;
+									display: flex;
+									justify-content: center;
+									align-items: center;
+									padding: 60px 100px;
+								}
+
+								.container-box:after{
+									content: '';
+									position: absolute;
+									width: 100%;
+									height: 100%;
+									left: 0;
+									top: 0;
+									background: linear-gradient(to right ,  #efefbb, #d4d3dd);
+									filter: blur(2px);
+									z-index: -1;
+								}
+								.contact-box{
+									max-width: 850px;
+									display: grid;
+									grid-template-columns: repeat(2, 1fr);
+									justify-content: center;
+									align-items: center;
+									text-align: center;
+									background-color: #fff;
+									box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+								}
+
+								.left{
+									background: url("images/contact2.png") no-repeat center;
+									background-size: cover;
+									height: 100%;
+								}
+
+								.right{
+									background-color: rgba(0,0,0,0.2);
+									padding: 25px 40px;
+								}
+
+								h2{
+									color:#5d5f6e ;
+									position: relative;
+									font-size: 40px ;
+									padding: 0 0 10px;
+									margin-bottom: 10px;
+								}
+
+								h2:after{
+									content: '';
+								    position: absolute;
+								    left: 50%;
+								    bottom: 0;
+								    transform: translateX(-50%);
+								    height: 4px;
+								    width: 50px;
+								    border-radius: 2px;
+								}
+
+								.field{
+									width: 100%;
+									border: 2px solid rgba(0, 0, 0, 0);
+									border-radius: 40px;
+									outline: none;
+									background-color: rgba(230, 230, 230, 0.6);
+									padding: 0.5rem 1rem;
+									font-size: 1.1rem;
+									margin-bottom: 22px;
+									transition: .3s;
+								}
+
+								.field:hover{
+									background-color: rgba(0, 0, 0, 0.1);
+								}
+
+								textarea{
+									min-height: 150px;
+								}
+
+								.btn{
+									width: 100%;
+									padding: 0.5rem 1rem;
+									background:#5868a8;
+									color: #fff;
+									font-size: 1.1rem;
+									border: none;
+									outline: none;
+									cursor: pointer;
+									transition: .3s;
+									border-radius: 30px;
+								}
+
+								.btn:hover{
+								    background-color: black;
+										color:burlywood ;
+								}
+
+								.field:focus{
+								    border: 2px solid rgba(30,85,250,0.47);
+								    background-color: #fff;
+								}
+
+
+/************************* FOOTER *****************************/
+.footerContainer .row , .left-bar , .right-bar{
+	font-family: 'Poppins' , sans-serif ;
+	padding:30px; 
+	background: black ; 
+	color : azure ; 
+
+}
+.footerContainer .row {
+
+	grid-template-columns: repeat(2 ,1fr);
+	width : 100% ; 
+}
+.left-bar , .right-bar {
+	width: 50% ; 
+}
+.left-bar h3{
+	color :burlywood ; 
+}
+.footerList li {
+	color :burlywood ; 	
+	display: flex; 
+	float : left ; 
+	padding : 10px; 
+	margin: auto  ; 
+}
+.footer-name { 
+color :#c92f1e ; 
+}
+.row .left-bar h3{
+	font-size : 30px ; 
+}
+.row .right-bar h3{
+	font-size : 30px ; 
+}
+.row .right-bar hr{
+	color:red ; 
+	height: 1px; 
+	width: 30% ; 
+	margin: left ;
+}
+.row .right-bar p {
+	color : grey ; 
+	margin: 10px ;
+}
+.left-bar h5{
+	color:dimgrey;
+}
+.right-bar input {
+	width : 60%; 
+	border-radius: 30px; 
+	padding: 10px ; 
+	background: burlywood ; 
+	margin-right	: 10px; 
+	border : none ; 
+}
+.right-bar button{
+	cursor: pointer ; 
+	padding: 10px; 
+	color : azure ; 
+	background: #c92f1e; 
+	border: none ;
+	border-radius : 30px; 
+}
+.right-bar button:hover{
+	background-color: blue; 
+	color : black ;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
